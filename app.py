@@ -4,8 +4,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    name = request.args.get('name', 'Андрюха')
-    message = request.args.get('message', 'Давай пиво вить!')
+    name = request.args.get('name', 'Recruto')
+    message = request.args.get('message', 'Давай дружить')
     return f"Hello {name}! {message}"
 
 if __name__ == '__main__':
